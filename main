@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+import shodan
+
+
+with open (".gitignore/key.txt", "r") as myfile:
+    data=myfile.readlines()
+
+api = shodan.Shodan(data[0])
